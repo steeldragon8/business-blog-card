@@ -4,13 +4,13 @@ import overlay from '../assets/white-overlay.svg'
 import { imageMetadata } from 'astro/assets/utils';
 
 interface Props {
-	image: string;
+	image: ImageMetadata;
 	title: string;
 	body: string;
 	href: string;
 	name: string;
 	occupation: string;
-	avatar: string;
+	avatar: ImageMetadata;
 }
 
 const { image, href, title, body, name, occupation, avatar } = Astro.props;
